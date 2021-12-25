@@ -1,0 +1,41 @@
+<p>pipe is used for formatting the data </p>
+<!--
+    lowercase
+    uppercase
+    number
+    json
+    date
+    currency
+    slice
+-->
+
+<pre>
+    {{fname}}
+    {{fname | lowercase}}
+    {{fname | uppercase}}
+    {{fname | slice:2:5}}
+
+    {{num}}
+    {{num | number}}
+    <!-- {{fname | number}} -->
+
+    {{num | currency}}
+    {{num | currency:'INR'}}
+    {{num | currency:'Rs. '}}
+    {{num | currency:'Mahesh '}}
+
+    {{num | hexaaaaaaaaaaaaaaa}}
+    {{15 | hexaaaaaaaaaaaaaaa}}
+    {{255 | hexaaaaaaaaaaaaaaa}}
+
+
+    {{5 | params:2:3:5}}
+
+    {{date}}
+    {{date | date}}
+    {{date | date: 'dd/MM/yyyy'}}
+
+    {{user}}
+    {{user | json}}
+
+</pre>

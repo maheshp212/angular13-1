@@ -5,6 +5,8 @@
 
 <!-- ngFor runs only on arrays-->
 <h1 *ngFor="let x of fruits">{{x}}</h1>
+<p *ngFor="let x of fruits">{{x}}</p>
+
 <ol >
     <li *ngFor="let x of fruits">{{x}}</li>
 </ol>
@@ -23,12 +25,45 @@
     <span *ngSwitchCase="'mahesh'"> Mahesh</span>
     <span *ngSwitchCase="'angular'"> Angular</span>
     <span *ngSwitchCase="'tech'"> Tech</span>
-    <span *ngSwitchDefault="'Default'"> Default</span>
+    <span *ngSwitchDefault> Default</span>
 </p>
 
-<input type="text" [(ngModel)]="fname">
+<p [ngStyle]="{'background-color':fname == 'mahesh'? 'skyblue': 'red'}"> this is style </p>
+<p [ngClass]="{'orange':(fname == 'mahesh')}"> this is class </p>
+<input type="text" (change)="callMe()" [(ngModel)]="fname">
 
 <p (click)="callMe()">thi sis click</p>
+
+<!-- <form asdf="'wer'" asdf2="fname" ></form> -->
+<!--
+    href
+    src
+    alt
+    style
+    class
+    title
+    width
+    height
+    lang
+    action
+    autofoucs
+    id
+    autoplay
+    type
+
+    
+-->
+<!-- onclick
+onmouserover
+onmouseout
+onmouseenter
+onmouseleave
+onblur
+onfocus
+onchange -->
+
+
+
 <pre>
 
 
