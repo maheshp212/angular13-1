@@ -1,0 +1,48 @@
+header {
+  clear: both;
+  background-color: violet;
+  height: 50px;
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 13px;
+  }
+}
+nav {
+  min-height: 54px;
+  background-color: tomato;
+  ul {
+    margin: 0;
+    li {
+      float: left;
+      list-style-type: none;
+
+      padding: 10px 0;
+      font-size: 1.8rem;
+
+      a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: violet;
+        padding: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+main {
+  background-color: yellowgreen;
+  min-height: 604px;
+  margin:0;
+  padding:10px;
+}
+footer {
+  background-color: violet;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  font-size: 1.4rem;
+}

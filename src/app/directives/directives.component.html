@@ -1,0 +1,39 @@
+<p>directives works!</p>
+
+<p *ngIf="fname == 'mahesh'"> this is if </p>
+<p [hidden]="fname == 'mahesh'"> this is HIDDEN </p>
+
+<!-- ngFor runs only on arrays-->
+<h1 *ngFor="let x of fruits">{{x}}</h1>
+<ol >
+    <li *ngFor="let x of fruits">{{x}}</li>
+</ol>
+
+<select >
+    <option *ngFor="let x of fruits">{{x}}</option>
+</select>
+
+<table border="1">
+    <tr *ngFor="let x of fruits">
+        <td > {{x}}</td>
+    </tr>
+</table>
+
+<p [ngSwitch]="fname">
+    <span *ngSwitchCase="'mahesh'"> Mahesh</span>
+    <span *ngSwitchCase="'angular'"> Angular</span>
+    <span *ngSwitchCase="'tech'"> Tech</span>
+    <span *ngSwitchDefault="'Default'"> Default</span>
+</p>
+
+<input type="text" [(ngModel)]="fname">
+
+<p (click)="callMe()">thi sis click</p>
+<pre>
+
+
+
+
+
+
+</pre>
