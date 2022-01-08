@@ -13,6 +13,8 @@ import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe } from './params.pipe';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { FormsComponent } from './forms/forms.component';
+import { ApiComponent } from './api/api.component';
+import {HttpClientModule} from '@angular/common/http'
 
 
 //decorator / meta data
@@ -27,12 +29,14 @@ import { FormsComponent } from './forms/forms.component';
     HexaPipe,
     ParamsPipe,
     LifeCycleComponent,
-    FormsComponent
+    FormsComponent,
+    ApiComponent
   ],
   imports: [ // modules
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [], // services
   bootstrap: [AppComponent]

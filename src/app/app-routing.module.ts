@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApiComponent } from './api/api.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'pipe', component:PipeComponent},
   {path:'lifeeee', component:LifeCycleComponent},
   {path:'form', component:FormsComponent},
+  {path:'apis', component:ApiComponent},
 ];
 
 @NgModule({
