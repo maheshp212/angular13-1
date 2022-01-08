@@ -12,6 +12,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe } from './params.pipe';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 //decorator / meta data
@@ -25,7 +26,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     PipeComponent,
     HexaPipe,
     ParamsPipe,
-    LifeCycleComponent
+    LifeCycleComponent,
+    FormsComponent
   ],
   imports: [ // modules
     BrowserModule,
